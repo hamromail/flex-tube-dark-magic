@@ -15,11 +15,11 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      {/* Display top navbar */}
-      <Navbar />
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        {/* Display top navbar */}
+        <Navbar />
         {/* Add margin-top to content to compensate for the fixed navbar */}
         <div className="pt-16 md:pt-20">
           <Routes>
