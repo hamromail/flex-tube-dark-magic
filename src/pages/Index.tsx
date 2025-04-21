@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { VideoInput } from "@/components/VideoInput";
 import { VideoPreview } from "@/components/VideoPreview";
@@ -173,6 +172,21 @@ export default function Index() {
         
         {/* Footer */}
         <footer className="mt-16 text-center">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-2">
+            <a
+              href="/privacy-policy"
+              className="text-xs text-neon-blue underline hover:text-neon-purple transition-all"
+            >
+              Privacy Policy
+            </a>
+            <span className="hidden md:inline-block text-muted-foreground">|</span>
+            <a
+              href="/terms-of-use"
+              className="text-xs text-neon-purple underline hover:text-neon-blue transition-all"
+            >
+              Terms of Use
+            </a>
+          </div>
           <p className="text-sm text-muted-foreground font-roboto">
             © {new Date().getFullYear()} YouTube Flux Downloader • This is a demo application for educational purposes
           </p>
